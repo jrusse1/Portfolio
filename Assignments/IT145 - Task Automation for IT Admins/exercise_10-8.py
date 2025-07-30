@@ -1,0 +1,15 @@
+try:
+    with open('dogs.txt') as d:
+        dog = d.read()
+    print('Dogs:')
+    print(dog)
+except FileNotFoundError:
+    print("Sorry, the file does not exist.")
+print("----------------------")
+try:
+    with open('cats.txt') as c:
+        cat = c.read()
+    print("Cats:")
+    print(cat)
+except FileNotFoundError:
+    print("Sorry, the file does not exist.")

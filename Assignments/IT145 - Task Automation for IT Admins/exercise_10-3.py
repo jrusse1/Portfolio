@@ -1,0 +1,6 @@
+name = input('Please enter your name:\n')
+f = open("guest.txt", "w")
+f.write(name)
+f.close()
+f = open('guest.txt', 'r')
+print('Contents of guest.txt:', f.read())
